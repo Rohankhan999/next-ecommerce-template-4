@@ -1,10 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-  eslint: {
-    ignoreDuringBuilds: true,
-  }
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ["cdn.sanity.io"],
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig; // Use module.exports instead of export default
